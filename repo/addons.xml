@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addons>
+<addon id="service.subtitles.unacs"
+       name="subs_unacs_sab"
+       version="0.0.8"
+       provider-name="kodi1">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.beautifulsoup4" version="4.3.2"/>
+  </requires>
+  <extension point="xbmc.subtitle.module"
+             library="service.py" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Bulgarian Subtitle Service</summary>
+    <description lang="en">Subtitles from subs.sab.bz and subsunacs.net. Thanks to josdion and jconxtc</description>
+    <language>en</language>
+    <platform>all</platform>
+    <forum>http://forum.kodi.tv/showthread.php?tid=195322</forum>
+    <website>https://github.com/kodi1/service.subtitles.unacs</website>
+    <email></email>
+    </extension>
+</addon>
+
+<addon id="plugin.video.kolibka" name="KOLIBKA" version="0.0.12" provider-name="Majide">
+  <requires>
+  	<import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.requests" version="1.1.0"/>
+  <import addon="script.module.beautifulsoup4" version="4.3.2"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+  	<provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+  	<summary lang="bg">Приставка за гледане на документални филми от kolibka.com</summary>
+  	<summary lang="en">Addon for watching documental movies from kolibka.com</summary>
+  	<description lang="bg">[COLOR 7700FF00]kodi1 мод за повече инфо - може да бъде напълно изключен от настройките [/COLOR]При отварянето на филмите може да забележите определено забавяне. Това не е дефект и се дължи на форматът на самите файлове, който не е предназначен за онлайн стрийминг. Наименованията на българските филми към този момент не се изобразяват правилно, но по обложката можете да се ориентирате какво да очаквате.</description>
+  	<description lang="en">[COLOR 7700FF00]kodi1 more info mod - can be completely disabled from settings [/COLOR]At the opening of the movies may notice a certain delay. This is not a defect and is due to the format of the files itself, not intended for online streaming. The names of the bulgarian movies at the moment cannot be shown correctly, but you can see what to expect by the covers.</description>
+  	<disclaimer lang="bg">Някои елементи на тази приставка, може да нямат уредени авторски права. Името, логото и сайтът са собственост на ... всички нас. Приставката се разпространява под GPL3 лиценз.</disclaimer>
+  	<disclaimer lang="en">Some parts of this addon may not be legal in your country of residence - please check with your local laws before installing.</disclaimer>
+  	<language>bg,en</language>
+  	<platform>all</platform>
+  	<forum></forum>
+  	<website></website>
+  	<email></email>
+  </extension>
+</addon>
+
+<addon id="plugin.video.bscfusion" name="Fusion TV" version="0.0.1" provider-name="kodi1">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.requests" version="1.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+        <summary>Bulsat Fusion for kodi</summary>
+        <summary lang="en">Addon for watching Fusion from bulsat.com</summary>
+        <description lang="en">It is not official addon from provider. It was made just for fun. You were warned.</description>
+        <disclaimer lang="en">Some parts of this addon may not be legal in your country of residence - please check with your local laws before installing.</disclaimer>
+        <language>en</language>
+        <platform>all</platform>
+        <forum></forum>
+        <website></website>
+        <email></email>
+  </extension>
+</addon>
+
+<addon id="plugin.video.nova.play" name="NOVA PLAY" version="0.1.1" provider-name="Majide">
+  <requires>
+  	<import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.requests" version="1.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+  	<provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+  	<summary lang="bg">Приставка за гледане на видео от play.novatv.bg</summary>
+  	<summary lang="en">Addon for watching videos from play.novatv.bg</summary>
+  	<description lang="bg">Приставка за гледане на видео по заявка от услугата NOVA PLAY, собственост на Modern Times Group - България. Препоръчително е използването на широколентова интернет връзка!</description>
+  	<description lang="en">Addon for watching on demand videos from NOVA PLAY service, property of Modern Times Group - Bulgaria. Broadband internet connection is recomended!</description>
+  	<description>Plugin for watching on demand videos from Modern Times Group - Bulgaria</description>
+  	<disclaimer lang="bg">Някои елементи на тази приставка, може да нямат уредени авторски права в България. Името, логото, интернет адреса и сайтът поместен на него са собственост на MTG. Приставката се разпронява под GPL2 лиценз.</disclaimer>
+  	<disclaimer lang="en">Some parts of this addon may not be legal in your country of residence - please check with your local laws before installing.</disclaimer>
+  	<language>bg,en</language>
+  	<platform>all</platform>
+  	<forum></forum>
+  	<website></website>
+  	<email></email>
+  </extension>
+</addon>
+
+<addon id="plugin.video.pulsar" name="Pulsar" version="0.4.7" provider-name="steeve">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="navigation.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.service" library="service.py" start="startup"/>
+    <extension point="xbmc.python.module" library="resources/site-packages" />
+    <extension point="xbmc.subtitle.module" library="navigation.py" />
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <language>en</language>
+        <website><![CDATA[https://github.com/steeve/plugin.video.pulsar]]></website>
+        <forum><![CDATA[http://forum.xbmc.org/showthread.php?tid=200957]]></forum>
+        <source><![CDATA[https://github.com/steeve/plugin.video.pulsar]]></source>
+        <language>en</language>
+        <license><![CDATA[Non commercial. See https://github.com/steeve/plugin.video.pulsar/blob/master/LICENSE]]></license>
+        <summary><![CDATA[Pulsar: Universal streaming]]></summary>
+        <description><![CDATA[Follow @pulsarhq on Twitter]]></description>
+    </extension>
+</addon>
+
+<addon id="script.pulsar.rarbg-mc" name="Pulsar MC's [COLOR FF89cc48]RARBG[/COLOR] Provider" version="3.0.0" provider-name="mancuniancol">
+	<requires>
+		<import addon="xbmc.python" version="2.12.0"/>
+        <import addon="plugin.video.pulsar" version="0.3.1"/>
+	</requires>
+	<extension point="xbmc.python.script" library="main.py">
+		<provides>executable</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Pulsar RARBG Provider</summary>
+		<description lang="en">This provider allows to choose the quality of video torrent which will feed Pulsar.[CR]You need to config the add-on before using Pulsar[CR]It works with Movies and some TV Shows</description>
+		<language></language>
+		<platform>all</platform>
+		<forum>http://forum.xbmc.org/showthread.php?tid=204728</forum>
+		<disclaimer lang="en">It only works with Pulsar 0.3.1![CR]It is just for educational purpose[CR]Check if it is illegal in your country to use.</disclaimer>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+	</extension>
+</addon>
+
+<addon id="plugin.video.vbox7" name="VBOX7" version="0.3.5" provider-name="Majide">
+  <requires>
+  	<import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.requests" version="1.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+  	<provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+  	<summary lang="bg">Приставка за гледане на видео от vbox7.com</summary>
+  	<summary lang="en">Addon for watching videos from vbox7.com</summary>
+  	<description lang="bg">От бутон Конфигурация, можете да въведете валидно потребителско име (VBOX7 акаунт) за да се активират опциите "Клипове, Колекции и Абонаменти на потребител". При търсене на колекции използвайте самостоятелната търсачка на колекции. Маркирайте желаната от вас колекция в резултатите и извикайте контекстното меню върху нея (десен бутон на мишката/дистанционното) и изберете опция "Добави към любимите". Всичко, което добавите към любимите (отделни клипове или цели колекции), ще откриете на началния екран на Kodi, в звездата до бутона за изключване (това важи за скин по подразбиране Confluence).</description>
+  	<description lang="en">From the configuration button, you can enter a valid user name (VBOX7 account) to enable the "Videos, Collections and User subscriptions". In searching collections, use alone collections finder. Highlight the desired collection in the results and call the context menu on it (right mouse button / remote) and select "Add to favorites". Everything you add to your favorites (individual clips or entire collections) can be found on the home screen of Kodi, the star button next to the power button (this applies to the default skin Confluence)</description>
+  	<disclaimer lang="bg">Някои елементи на тази приставка, може да нямат уредени авторски права в България. Името, логото, интернет адреса и сайтът поместен на него са собственост на MTG. Приставката се разпронява под GPL3 лиценз.</disclaimer>
+  	<disclaimer lang="en">Some parts of this addon may not be legal in your country of residence - please check with your local laws before installing.</disclaimer>
+  	<language>bg,en</language>
+  	<platform>all</platform>
+  	<forum></forum>
+  	<website></website>
+  	<email></email>
+  </extension>
+</addon>
+
+<addon id="script.pulsar.arenabg-mc" name="Pulsar MC's [COLOR FF89cc48]ArenaBg[/COLOR] Provider" version="3.0.0" provider-name="mancuniancol">
+	<requires>
+		<import addon="xbmc.python" version="2.12.0"/>
+        <import addon="plugin.video.pulsar" version="0.3.1"/>
+	</requires>
+	<extension point="xbmc.python.script" library="main.py">
+		<provides>executable</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Pulsar ArenaBg Provider</summary>
+		<description lang="en">This provider allows to choose the quality of video torrent which will feed Pulsar.[CR]You need to config the add-on before using Pulsar[CR]It works with Movies and some TV Shows</description>
+		<language></language>
+		<platform>all</platform>
+		<forum>http://forum.xbmc.org/showthread.php?tid=204728</forum>
+		<disclaimer lang="en">It only works with Pulsar 0.3.1![CR]It is just for educational purpose[CR]Check if it is illegal in your country to use.</disclaimer>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+	</extension>
+</addon>
+
+<addon id="plugin.video.mytvbg" name="MyTV.BG" version="1.0.5" provider-name="boris.todorov@gmail.com">
+  <requires>
+    <import addon="xbmc.python" version="2.1.1"/>
+    <import addon="script.module.xbmcswift" version="0.0.1"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <language>en</language>
+    <summary lang="en">Video plugin for MyTV.bg http://www.mytv.bg/</summary>
+    <description lang="en">
+This plugin provides interface to tv streams from MyTV.bg.
+Note: MyTV.bg account is required.
+
+Currently supported functions are:
+ 1. On-line TV chanels
+ 2. Back in time offseted TV chanels - fixed offsets, max -12 hours
+ 3. TV serials
+
+Not supported functions (TODO list)
+ 1. Recorded show programs - http://mytv.bg/broadcasts
+ 2. News - http://mytv.bg/news
+ 3. Flexable time shifts with minutes precision
+ 4. Full TV program for all TV chanels - http://mytv.bg/tv_program
+
+This plugin was initialy based on Nettera.tv plugin from mr.olix@gmail.com
+</description>
+    <disclaimer lang="en">You have to sign up and pay to access MyTV.bg TV streams.
+Please check details on http://mytv.bg/terms  and  http://mytv.bg/faq
+
+This plugin currently can be used only outside Bulgaria. http://mytv.bg/countries
+
+This plugin will not work inside Bulgaria, Romania, Hrvatska, Slovakia, Slovenia, Czech republic.
+In so mentioned contries you need to use services from VOYO:
+ http://voyo.bg/
+ http://voyo.ro/
+ http://voyo.si/
+ http://voyo.sk/
+ http://voyo.cz/
+    </disclaimer>
+    <website></website>
+    <email>boris.todorov@gmail.com</email>
+  </extension>
+</addon>
+
+<addon id="plugin.video.neterratv" name="Neterra.TV" version="2.0.2" provider-name="mr.olix@gmail.com">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.xbmcswift" version="0.2.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+	<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <language>de</language>
+    <summary lang="en">Video plugin for Neterra.TV http://www.neterra.tv/</summary>
+    <summary lang="de">Video plugin für Neterra.TV http://www.neterra.tv/</summary>
+    <description lang="en">
+    This plugin provides access to tv videos streams from Neterra.TV.
+    Note: Neterra.TV account is required.</description>
+    <description lang="de">
+    Dieses plugin bietet Zugriff auf alle Videos Streams from Neterra.TV.
+    Note: Neterra.TV Benutzer ist erforderlich.</description>
+    <disclaimer lang="en">You have to sign up and pay to access Neterra.TV TV streams</disclaimer>
+    <website></website>
+    <source>git://github.com/mrolix/plugin.video.neterratv.git</source>
+    <email>mr.olix@gmail.com</email>
+  </extension>
+</addon>
+
+<addon id="plugin.video.kmediatorrent" name="KMediaTorrent" version="2.3.3" provider-name="jmarth">
+    <requires>
+        <import addon="xbmc.python" version="2.14.0"/>
+        <import addon="script.module.requests" version="2.4.3"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary><![CDATA[kmediatorrent: Torrent streaming
+        for KODI/XBMC.]]></summary>
+        <description><![CDATA[Watch torrents directly from KODI/XBMC, without waiting.]]></description>
+    </extension>
+</addon>
+</addons>
